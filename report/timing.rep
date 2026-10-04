@@ -1,0 +1,67 @@
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : crc_top
+Version: W-2024.09-SP2
+Date   : Mon Sep 28 04:05:46 2026
+****************************************
+
+Operating Conditions: ss0p75vn40c   Library: saed32rvt_ss0p75vn40c
+Wire Load Model Mode: enclosed
+
+  Startpoint: divisor[2] (input port clocked by CLK)
+  Endpoint: check/valid_reg
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  crc_top            8000                  saed32rvt_ss0p75vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     1.00       1.40 f
+  divisor[2] (in)                          0.00       1.40 f
+  U148/Y (AND2X1_RVT)                      0.35       1.75 f
+  U149/SO (HADDX1_RVT)                     0.37       2.12 f
+  U150/Y (NAND2X0_RVT)                     0.23       2.35 r
+  U152/S (FADDX1_RVT)                      0.60       2.95 f
+  U153/Y (NAND2X0_RVT)                     0.24       3.19 r
+  U157/S (FADDX1_RVT)                      0.56       3.75 f
+  U158/Y (NAND2X0_RVT)                     0.23       3.98 r
+  U162/S (FADDX1_RVT)                      0.57       4.55 f
+  U166/Y (NAND4X0_RVT)                     0.18       4.73 r
+  U167/Y (NAND2X0_RVT)                     0.18       4.91 f
+  U168/S (FADDX1_RVT)                      0.56       5.47 r
+  U170/Y (NAND4X0_RVT)                     0.20       5.67 f
+  U171/Y (NAND2X0_RVT)                     0.25       5.92 r
+  U172/S (FADDX1_RVT)                      0.51       6.43 f
+  U173/Y (NAND2X0_RVT)                     0.23       6.67 r
+  U175/S (FADDX1_RVT)                      0.58       7.25 f
+  U182/Y (OA22X1_RVT)                      0.38       7.63 f
+  U183/Y (NAND2X0_RVT)                     0.14       7.77 r
+  U187/Y (OA22X1_RVT)                      0.24       8.01 r
+  U188/Y (OR2X1_RVT)                       0.15       8.16 r
+  U102/Y (INVX0_RVT)                       0.06       8.22 f
+  check/valid_reg/RSTB (DFFSSRX1_RVT)      0.00       8.22 f
+  data arrival time                                   8.22
+
+  clock CLK (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.40      10.40
+  clock uncertainty                       -0.10      10.30
+  check/valid_reg/CLK (DFFSSRX1_RVT)       0.00      10.30 r
+  library setup time                      -0.57       9.73
+  data required time                                  9.73
+  -----------------------------------------------------------
+  data required time                                  9.73
+  data arrival time                                  -8.22
+  -----------------------------------------------------------
+  slack (MET)                                         1.50
+
+
+1
