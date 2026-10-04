@@ -7,10 +7,10 @@ CRC is applied in data communication, computer networks, embedded systems, stora
 Firstly, the message is appended by some number of zeros so that its degree is higher than the degree of the generator polynomial. Then, the new polynomial is divided by the generator polynomial, which is also represented by binary numbers. Since this polynomial division is XOR-based, the division is performed using modulo-2 arithmetic. The result of the division is a remainder that is appended to the original message, thus forming a transmitted message. 
 
 
-<img width="900" height="1000" alt="WhatsApp Image 2026-10-01 at 7 26 37 PM" src="https://github.com/user-attachments/assets/46fd9acc-1a99-442c-b30d-72346c1540c2" />
+<img width="500" height="700" alt="WhatsApp Image 2026-10-01 at 7 26 37 PM" src="https://github.com/user-attachments/assets/46fd9acc-1a99-442c-b30d-72346c1540c2" />
 
 
 Design and Implementation Process
 
 
-<img width="900" height="1000" alt="image" src="https://github.com/user-attachments/assets/506e7a60-6dfc-46db-9c22-33979f722699" />
+<img width="500" height="700" alt="image" src="https://github.com/user-attachments/assets/506e7a60-6dfc-46db-9c22-33979f722699" />
