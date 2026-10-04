@@ -1,0 +1,21 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : crc_top
+Version: W-2024.09-SP2
+Date   : Mon Sep 28 04:05:46 2026
+****************************************
+
+
+   max_leakage_power
+
+                             Required        Actual
+   Design                   Leakage Power  Leakage Power     Slack
+   -----------------------------------------------------------------
+   crc_top                      0.00       187485.88      -187485.88
+                                                                    (VIOLATED)
+
+
+1
